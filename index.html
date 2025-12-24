@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pozek Group | Sleigh Cam</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="pg-sleigh">
+    <header class="topbar">
+      <div class="brand">POZEK GROUP <span>| SLEIGH CAM</span></div>
+      <button id="soundBtn" class="pill" aria-label="Toggle sound">Sound: OFF</button>
+    </header>
+
+    <main class="stage" id="stage">
+      <canvas id="snow"></canvas>
+
+      <div class="santa-wrap" id="santaWrap" role="button" tabindex="0" aria-label="Tap Santa">
+        <img id="santaImg" src="./santa-sleigh.png" alt="Santa and sleigh" />
+        <div class="speech" id="speech" aria-hidden="true"></div>
+        <div class="pulse"></div>
+      </div>
+
+      <div class="sparkle" id="sparkle" aria-hidden="true"></div>
+    </main>
+
+    <footer class="deck">
+      <div class="card">
+        <div class="label">Next stop</div>
+        <div class="value" id="nextStop">Loading...</div>
+        <div class="sub" id="storyLine">Warming up the sleigh…</div>
+      </div>
+
+      <div class="card">
+        <div class="label">Arrives in Orlando</div>
+        <div class="value mono" id="eta">--:--:--</div>
+        <div class="sub">Target: 1:00 AM ET</div>
+      </div>
+
+      <div class="card">
+        <div class="label">Gifts delivered</div>
+        <div class="value mono" id="gifts">0</div>
+        <div class="sub">🎁 + <span id="rate">4,200</span>/sec</div>
+      </div>
+
+      <div class="actions">
+        <button id="cheerBtn" class="cheer">Cheer! ✨</button>
+        <div class="meter">
+          <div class="meterFill" id="meterFill"></div>
+        </div>
+
+        <a
+          class="cta"
+          href="https://pozek.com/idx/?feed=stellar&feed_title=My%20Florida%20Regional%20MLS&maximum_price=1100000&search_photo=Y&sort_by=DESC-ListingPrice&latitude=28.53550219131681&longitude=-81.38044347169495&zoom=12&usersearch=1&bounds%5Bne%5D%5Blat%5D=28.706078574060385&bounds%5Bne%5D%5Blng%5D=-81.28087987306219&bounds%5Bsw%5D%5Blat%5D=28.364649226301584&bounds%5Bsw%5D%5Blng%5D=-81.48000707032782"
+          target="_blank"
+          rel="noopener"
+        >Find Your Chimney</a>
+
+        <button id="shareBtn" class="share">Share</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
